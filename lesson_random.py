@@ -1,0 +1,35 @@
+# іменем модуля називати файли - ЗАБОРОНЕНО!!!
+
+import random  # random.randrange(5)
+# import random as r  # r.randrange(5)
+# from random import *  # randrange(5)
+#### from numpy import *
+# from random import randrange, randint  # randrange(5)
+# from random import randrange as rr  # rr(5)
+
+comp_choice = random.randint(0,100)
+n_count = 0
+# user_choice = -1
+# while True:
+while n_count < 3:
+    try:
+        user_choice = int(input("Enter your number: "))
+    except ValueError:
+        print("Uncorrect number!")
+        continue
+    else:
+        print("Excelent! I remember your number")
+    finally:
+        n_count += 1
+        print(f"Your attempt {n_count}")
+        # print(f"Your choice")
+        
+    # if
+    
+    if user_choice == comp_choice:
+        print("Congratulations")
+        break
+    # elif
+    # else
+    print("Try again!")
+    
